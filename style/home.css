@@ -1,0 +1,84 @@
+body{
+    background-image: url(https://media2.giphy.com/media/9EmM3VQKnyeDS/source.gif);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.container{
+    background: white;
+    height: 600px;
+    margin: 0px auto;
+    position: relative;
+    border-style: inset;
+    border-color: black;
+    border-width: 5px;
+    margin-top: 60px;
+}
+
+.logo{
+    position: relative;
+    height: 100px;
+    width: 200px;
+    margin: 0px auto;
+    margin-top: 10%;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.character{
+    position: relative;
+    height: 275px;
+    width: 335px;
+    top: 30%;
+    margin: 0px auto;
+    transition: all .5s ease-in-out;
+}
+.character:hover{
+    transform: scale(1.1);
+}
+
+.comicbook{
+    position: relative;
+    height: 275px;
+    width: 175px;
+    top: 30%;
+    margin: 0px auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    transition: all .5s ease-in-out;
+}
+.comicbook:hover{
+    transform: scale(1.1);
+}
+
+.searchcharacter{
+    position: fixed;
+    bottom: 55%;
+    left: 18%;
+    background-color: red;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    transform: rotate(-20deg);
+}
+
+.searchcomic{
+    position: fixed;
+    bottom: 55%;
+    left: 65%;
+    background-color: red;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    transform: rotate(20deg);
+}
+ 
+h1{
+    font-size: 20px;
+    font-family: 'Bangers', cursive;
+}
+
+#searchcomic,#searchcharacter{
+    color: white;
+}
