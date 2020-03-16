@@ -1,0 +1,45 @@
+body{
+    background-image: url(https://wallpaperaccess.com/full/741885.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    background: white;
+    height: 600px;
+    margin: 0px auto;
+    position: relative;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    margin-top: 60px;
+}
+
+.logo{
+    position: relative;
+    height: 100px;
+    width: 200px;
+    margin: 0px auto;
+    margin-top: 10%;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.character{
+    position: relative;
+    height: 275px;
+    width: 335px;
+    top: 30%;
+    margin: 0px auto;
+}
+
+.comicbook{
+    position: relative;
+    height: 275px;
+    width: 175px;
+    top: 30%;
+    margin: 0px auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
