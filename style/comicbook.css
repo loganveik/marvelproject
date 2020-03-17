@@ -1,0 +1,24 @@
+body{
+    background-image: url(https://i.pinimg.com/originals/f7/5f/e9/f75fe9d6f289c1f3b5382f832ff35477.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    background: white;
+    height: 600px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    margin-top: 60px;
+}
+
+h1,p,#homebtn,#searchbtn{
+    font-size: 20px;
+    font-family: 'Bangers', cursive;
+}
+
+.image{
+    position: relative;
+    height: 350px; 
+}

@@ -7,8 +7,6 @@ body{
 .container{
     background: white;
     height: 600px;
-    margin: 0px auto;
-    position: relative;
     border-style: solid;
     border-color: black;
     border-width: 5px;

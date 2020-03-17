@@ -10,30 +10,18 @@
     <title>Character Search</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container h-auto">
         <div class="searchform">
             <form>
                 <div class="form-group text-center my-2">
                     <h1>Search for ANY Marvel Character!</h1>
                     <input type="search" class="form-control" id="searchedChar" placeholder="Ex. Hulk, Iron Man, Spider-Man">
-                    <button type="submit" class="btn btn-success my-2 mx-2" id="searchbtn">Search Character</button>
-                    <button type="submit" class="btn btn-danger my-2" id="homebtn">Back to Home</button>
+                    <a type="submit" class="btn my-2 mx-2" id="searchbtn">Search Character</a>
+                    <a type="submit" class="btn my-2" id="homebtn" href="../index.html">Back to Home</a>
                 </div>
             </form>    
         </div>
-        <div class="characterdisplay text-center">
-            <div class="mb-3 w-auto h-auto p-3">
-                <div class="row no-gutters">
-                    <div class="imagediv col-md-4"></div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h1 class="name"></h1>
-                            <p class="description"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="characterdisplay text-center"></div>
     </div>
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
