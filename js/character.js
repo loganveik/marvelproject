@@ -5,7 +5,7 @@ $("#searchbtn").on("click", function(event){
 });
 
 $("#homebtn").on("click", function(event){
-    
+    window.location = '../view/index.html'
 });
 
 function characterajax() {
