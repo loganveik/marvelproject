@@ -11,7 +11,7 @@ $("#homebtn").on("click", function(event){
 function characterajax() {
     event.preventDefault();
     const characterName = $("#searchedChar").val().trim();
-    const queryURL = 'http://gateway.marvel.com/v1/public/characters?nameStartsWith=' + characterName + '&ts=1&apikey=66c7889f262bbc69f0281c76ea6a366d&hash=25b9e11e593510855d8a6ef9ef4d9fb9'
+    const queryURL = 'https://gateway.marvel.com/v1/public/characters?nameStartsWith=' + characterName + '&ts=1&apikey=66c7889f262bbc69f0281c76ea6a366d&hash=25b9e11e593510855d8a6ef9ef4d9fb9'
     $.ajax({
     url: queryURL,
     method: "GET",
