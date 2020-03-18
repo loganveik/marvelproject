@@ -12,14 +12,15 @@ function characterajax() {
     url: queryURL,
     method: "GET"
 }).then(function(response){
-    console.log(response);
     if(response.data.results.length === 0){
-        const undefinedCatch = $("<h1>Sorry, couldnt find " + characterName + "! Check your spelling, or search another character!</h1>");
+        const undefinedCatch = $("<h3>Sorry, couldn't find " + '"' + characterName + '"' + "! Check your spelling, or search another character!</h3>");
         $(".characterdisplay").append(undefinedCatch); 
     } else{
         const cardBody = $("<div class='mb-3 w-auto h-auto p-3 rounded' style='background-color: #f7e75d; border-style: solid; border-color: black;''></div>");
         const cardBodyNew = $("<div class='row no-gutters'></div>");
         cardBody.append(cardBodyNew);
+        const showingResultsFor = $("<h3 class='showingresultsfor'>Showing results for " + '"' + characterName + '"' + "</h3>");
+        $(".characterdisplay").append(showingResultsFor);
         const picCol = $("<div class='col-md-4'></div>");
         cardBodyNew.append(picCol);
         const imageURL = response.data.results[0].thumbnail.path + '.' + response.data.results[0].thumbnail.extension;

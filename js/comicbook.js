@@ -13,10 +13,11 @@ function comicajax() {
     method: "GET"
 }).then(function(response){
     if(response.data.results.length === 0){
-        const undefinedCatch = $("<h1>Sorry, couldnt find " + comicName + "! Check your spelling, or search another comic!</h1>");
+        const undefinedCatch = $("<h3>Sorry, couldn't find " + '"' + comicName + '"' + "! Check your spelling, or search another comic!</h3>");
         $(".comicdisplay").append(undefinedCatch); 
     } else{
-        console.log(response.data.results);
+        const showingResultsFor = $("<h3 class='showingresultsfor'>Showing results for " + '"' + comicName + '"' + "</h3>");
+        $(".comicdisplay").append(showingResultsFor);
         const comicLoop = response.data.results;
         for (let i = 0; i < comicLoop.length; i++) {
             const cardBody = $("<div class='mb-3 w-auto h-auto p-3 rounded' style='background-color: #f7e75d; border-style: solid; border-color: black;''></div>");
@@ -31,13 +32,14 @@ function comicajax() {
             cardBodyNew.append(textCol);
             const textColDiv = $("<div class='card-body'></div>");
             textCol.append(textColDiv);
-            const h3Text = $("<h3 class='title'></h3>");
-            const pText = $("<p class='description'></p>");
-            textColDiv.append(h3Text,pText);
+            const searchedComicTitle = $("<h3 class='title'></h3>");
+            const searchedComicDesc = $("<p class='description'></p>");
+            const searchedComicUrl = $("<a class='price' href=" + '"' + response.data.results[i].urls[0].url + '"' + ">Click Here to Learn More!</a>");
+            textColDiv.append(searchedComicTitle,searchedComicDesc,searchedComicUrl);
             const title = response.data.results[i].title;
-            h3Text.append(title);
+            searchedComicTitle.append(title);
             const description = response.data.results[i].description;
-            pText.append(description);
+            searchedComicDesc.append(description);
             $(".comicdisplay").append(cardBody);
         }
     }    
