@@ -1,0 +1,37 @@
+body{
+    background-image: url(https://media2.giphy.com/media/9EmM3VQKnyeDS/source.gif);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.container{
+    /* background: white; */
+    margin: 0px auto;
+    position: relative;
+    /* border-style: inset; */
+    /* border-color: black; */
+    /* border-width: 5px; */
+    margin-top: 60px;
+}
+
+.character:hover{
+    transform: scale(1.1);
+}
+
+.comicbook:hover{
+    transform: scale(1.1);
+}
+ 
+h1{
+    font-size: 20px;
+    font-family: 'Bangers', cursive;
+}
+
+.searchcomic,.searchcharacter{
+    /* color: white; */
+    color: red;
+    /* color: #f7e75d; */
+    /* background-color: gold; */
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: black;
+}
+
